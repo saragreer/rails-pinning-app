@@ -18,11 +18,11 @@
                   <%= image_tag('ruby-logo-thumbnail.png') %>
                 <% end %>
               </div>
-              
-              <div class="col-xs-9">
+
+              <div class="pin-title col-xs-9">
                 <h4>
-                  <a href="<%= pin_path(pin) %>">
-                    <%= "#{pin.title}" %>
+                  <a href="<%= pin_by_name_path(slug: pin.slug) %>">
+                    <%= "#{pin.title.truncate(30)}" %>
                   </a>
                 </h4>
                 <a class="url" href="<%= "#{pin.url}" %>">
