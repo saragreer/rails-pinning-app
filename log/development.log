@@ -142,3 +142,11 @@ Processing by PinsController#show as HTML
   [1m[36mPin Load (0.2ms)[0m  [1mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = $1 LIMIT 1[0m  [["id", 1]]
   Rendered pins/show.erb within layouts/application (0.5ms)
 Completed 200 OK in 47ms (Views: 37.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 54.244.95.60 at 2015-09-25 15:27:50 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#index as HTML
+  [1m[35mPin Load (0.3ms)[0m  SELECT "pins".* FROM "pins"
+  Rendered pins/index.erb within layouts/application (1.4ms)
+Completed 200 OK in 32ms (Views: 31.3ms | ActiveRecord: 0.3ms)
