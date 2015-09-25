@@ -46,3 +46,6 @@ end
 
 gem 'rspec'
 gem 'rspec-rails'
+
+# Twelve-factor is a set of standards and best practices for modern web apps to improve Heroku
+gem 'rails_12factor'
